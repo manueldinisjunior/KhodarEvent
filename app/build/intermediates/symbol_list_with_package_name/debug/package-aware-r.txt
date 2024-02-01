@@ -141,6 +141,8 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable menu
+drawable mozdev
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -306,6 +308,7 @@ string status_bar_notification_info_overflow
 string switch_role
 string tab
 string template_percent
+string your_community_button
 style DialogWindowTheme
 style FloatingDialogTheme
 style FloatingDialogWindowTheme

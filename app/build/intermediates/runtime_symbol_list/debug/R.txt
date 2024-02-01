@@ -140,6 +140,8 @@ int drawable ic_call_decline 0x7f070009
 int drawable ic_call_decline_low 0x7f07000a
 int drawable ic_launcher_background 0x7f07000b
 int drawable ic_launcher_foreground 0x7f07000c
+int drawable menu 0x7f070019
+int drawable mozdev 0x7f07001a
 int drawable notification_action_background 0x7f07000d
 int drawable notification_bg 0x7f07000e
 int drawable notification_bg_low 0x7f07000f
@@ -305,6 +307,7 @@ int string status_bar_notification_info_overflow 0x7f0c002d
 int string switch_role 0x7f0c002e
 int string tab 0x7f0c002f
 int string template_percent 0x7f0c0030
+int string your_community_button 0x7f0c0031
 int style DialogWindowTheme 0x7f0d0000
 int style FloatingDialogTheme 0x7f0d0001
 int style FloatingDialogWindowTheme 0x7f0d0002

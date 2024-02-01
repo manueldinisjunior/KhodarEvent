@@ -71,13 +71,13 @@ object AppModule {
 //            context.dataStoreFile("user_preferences.json")
 //        }
 
-    @Singleton
-    @Provides
-    fun provideUerDataRepository(
-        userDataRepository: UserDataRepositoryImpl
-    ): UserDataRepository {
-        return userDataRepository
-    }
+//    @Singleton
+//    @Provides
+//    fun provideUerDataRepository(
+//        userDataRepository: UserDataRepositoryImpl
+//    ): UserDataRepository {
+//        return userDataRepository
+//    }
 
 }
 

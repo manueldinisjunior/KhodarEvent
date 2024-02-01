@@ -9,12 +9,15 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable menu
+drawable mozdev
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string communities_section
 string next_events
 string searchPlaceHolder
+string your_community_button
 style Theme.KhodarEvent
 xml backup_rules
 xml data_extraction_rules
