@@ -1,5 +1,4 @@
 package com.mariomanhique.khodarevent.presentation.components
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -38,7 +37,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.mariomanhique.khodarevent.R
 import com.mariomanhique.khodarevent.util.KhodarButtonsColors
-//import com.mariomanhique.khodarevent.util.fontFamily
+//import com.mariomanhique.khodarevent.utils.fontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -82,7 +81,7 @@ fun NavigationDrawer(
                                 Text(
                                     text = stringResource(id = R.string.your_community_button),
                                     style = TextStyle(
-                                        fontSize = MaterialTheme.typography.titleMedium.fontSize,
+//                                        fontSize = MaterialTheme.typography.titleMedium.fontSize,
 //                                        fontFamily = fontFamily(
 //                                            fontWeight = FontWeight.Bold
 //                                        ),
@@ -105,4 +104,3 @@ fun NavigationDrawer(
         content = content
     )
 }
-

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KhodarEvent</string>
     <string name="next_events">Próximos Eventos\n</string>
+    <string name="your_community_button">Comunidades</string>
     <string name="communities_section">Comunidades\n</string>
     <string name="searchPlaceHolder">Pesquisar Evento\n</string>
 </resources>

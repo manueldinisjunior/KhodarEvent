@@ -1,6 +1,6 @@
+package com.mariomanhique.khodarevent.presentation.screens.home
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.paddingFromBaseline
 import androidx.compose.foundation.layout.size
@@ -18,40 +17,37 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
-import androidx.compose.foundation.lazy.grid.LazyGridScope
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.rememberNestedScrollInteropConnection
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.mariomanhique.khodarevent.R
 import com.mariomanhique.khodarevent.model.Community
+import com.mariomanhique.khodarevent.model.Event
+import com.mariomanhique.khodarevent.presentation.components.EventCard
 import com.mariomanhique.khodarevent.presentation.components.ScreenSection
 import com.mariomanhique.khodarevent.presentation.components.SearchBar
 import com.mariomanhique.khodarevent.util.KhodarButtonsColors
-import com.mariomanhique.khodarevent.model.Event
-import com.mariomanhique.khodarevent.presentation.components.EventCard
-// import com.mariomanhique.khodarevent.util.fontFamily
+
+//import com.mariomanhique.khodarevent.utils.fontFamily
 
 @Composable
 fun HomeContent(
@@ -112,7 +108,7 @@ fun HomeContent(
                 ) {
                     Image(
                         modifier = Modifier.size(50.dp),
-                        painter = painterResource(id = R.drawable.menu),
+                        imageVector = Icons.Default.Menu,
                         contentDescription = "",
 //                        tint = KhoButtonsColors.buttonColor
                     )
@@ -144,10 +140,10 @@ fun HomeContent(
             Text(
                 text = stringResource(id = R.string.next_events),
                 style = MaterialTheme.typography.titleLarge.copy(
-                    fontSize = 19.sp,
+//                    fontSize = 19.sp,
 //                    fontFamily = fontFamily(
-                 //       fontWeight = FontWeight.Bold
-                   // ),
+//                        fontWeight = FontWeight.Bold
+//                    ),
                     color = MaterialTheme.colorScheme.secondary
                 ),
                 modifier = Modifier
@@ -211,17 +207,17 @@ fun CommunityCard(
             ) {
                 Text(text = name,
                     style = MaterialTheme.typography.titleLarge.copy(
-                        fontSize = 25.sp,
-                       // fontFamily = fontFamily(
-                        //    fontWeight = FontWeight.Bold
-                     //   ),
+//                        fontSize = 25.sp,
+//                        fontFamily = fontFamily(
+//                            fontWeight = FontWeight.Bold
+//                        ),
                         color = KhodarButtonsColors.white
                     ),
                     overflow = TextOverflow.Ellipsis
                 )
                 Text(text = "Eventos: $eventCount",
                     style = MaterialTheme.typography.titleLarge.copy(
-                        fontSize = 20.sp,
+//                        fontSize = 20.sp,
 //                        fontFamily = fontFamily(),
                         color = MaterialTheme.colorScheme.secondary
                     )

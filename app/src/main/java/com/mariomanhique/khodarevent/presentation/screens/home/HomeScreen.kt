@@ -1,4 +1,4 @@
-package com.mariomanhique.khoevent.presentation.screens.home
+package com.mariomanhique.khodarevent.presentation.screens.home
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
