@@ -4,15 +4,16 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.core.DataStoreFactory
 import androidx.datastore.dataStoreFile
-// import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserPreferencesSerializer
-// import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserDataRepository
-// import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserDataRepositoryImpl
+//import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserPreferencesSerializer
+//import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserDataRepository
+//import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserDataRepositoryImpl
 import com.mariomanhique.khodarevent.model.UserPreferences
 import com.mariomanhique.khodarevent.network.KhodarEventsApi
-// import com.mariomanhique.khodarevent.util.ApplicationScope
 import com.mariomanhique.khodarevent.util.Constants
-// import com.mariomanhique.khodarevent.util.Dispatcher
-// import com.mariomanhique.khodarevent.util.NiaDispatchers
+//import com.mariomanhique.khodarevent.utils.ApplicationScope
+//import com.mariomanhique.khodarevent.utils.Constants
+//import com.mariomanhique.khodarevent.utils.Dispatcher
+//import com.mariomanhique.khodarevent.utils.NiaDispatchers
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -80,5 +81,3 @@ object AppModule {
 //    }
 
 }
-
-

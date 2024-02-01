@@ -1,29 +1,42 @@
 package com.mariomanhique.khodarevent.navigation
 
+//import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.rememberNavController
+import com.mariomanhique.khodarevent.presentation.screens.home.navigation.homeRoute
+import com.mariomanhique.khodarevent.presentation.screens.home.navigation.navigateToHome
+//import androidx.navigation.compose.rememberNavController
 import com.mariomanhique.khodarevent.presentation.screens.splash.navigation.splashRoute
 import com.mariomanhique.khodarevent.ui.KhodarAppState
-import com.mariomanhique.khoevent.presentation.screens.home.navigation.navigateToHome
+
 
 @Composable
 fun KhodarNavHost(
     appState: KhodarAppState,
     startDestination: String = splashRoute,
     onMenuClicked: () -> Unit = {},
-    paddingValues: PaddingValues
+    paddingValues: PaddingValues,
 ) {
 
-    val navController = rememberNavController();
+    val navController = appState.navController
 
     NavHost(navController = navController, startDestination = startDestination){
 
         splashRoute{
-    navController.navigateToHome()
+            navController.navigateToHome()
         }
+
+        homeRoute(
+            onMenuClicked = onMenuClicked,
+            navigateToEventDetails = {}
+        )
 
     }
 
+
+
+
 }
+
+

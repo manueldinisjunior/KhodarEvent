@@ -8,7 +8,6 @@ import androidx.navigation.NavDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-
 //import com.mariomanhique.khodarevent.presentation.screens.auth.signIn.navigation.navigateToSignIn
 //import com.mariomanhique.khodarevent.presentation.screens.community.navigation.navigateToCommunity
 //import com.mariomanhique.khodarevent.presentation.screens.eventCreation.navigation.navigateToCreateEvent
@@ -45,14 +44,14 @@ class KhodarAppState(
         @Composable get() = navController
             .currentBackStackEntryAsState().value?.destination
 
-//    fun navigateToCreateEvent(){
-//        navController.navigateToCreateEvent()
-//    }
-//    fun navigateToCommunityEvents(){
-//        navController.navigateToCommunity()
-//    }
-//
-//    fun navigateToSignIn(){
-//        navController.navigateToSignIn()
-//    }
+    /*  fun navigateToCreateEvent(){
+          navController.navigateToCreateEvent()
+      }
+      fun navigateToCommunityEvents(){
+          navController.navigateToCommunity()
+      }
+
+      fun navigateToSignIn(){
+          navController.navigateToSignIn()
+      }*/
 }
