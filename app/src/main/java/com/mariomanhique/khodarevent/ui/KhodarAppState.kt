@@ -44,14 +44,14 @@ class KhodarAppState(
         @Composable get() = navController
             .currentBackStackEntryAsState().value?.destination
 
-    /*  fun navigateToCreateEvent(){
-          navController.navigateToCreateEvent()
-      }
-      fun navigateToCommunityEvents(){
-          navController.navigateToCommunity()
-      }
+  /*  fun navigateToCreateEvent(){
+        navController.navigateToCreateEvent()
+    }
+    fun navigateToCommunityEvents(){
+        navController.navigateToCommunity()
+    }
 
-      fun navigateToSignIn(){
-          navController.navigateToSignIn()
-      }*/
+    fun navigateToSignIn(){
+        navController.navigateToSignIn()
+    }*/
 }

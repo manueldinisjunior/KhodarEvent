@@ -1,8 +1,11 @@
 package com.mariomanhique.khodarevent.presentation.screens.home
 
+
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.mariomanhique.khodarevent.data.repository.KhodarEventsRepoImpl
+import com.mariomanhique.khodarevent.data.repository.KhoEventsRepoImpl
+//import com.mariomanhique.khodarevent.data.repository.userDataRepository.UserDataRepository
 import com.mariomanhique.khodarevent.model.Community
 import com.mariomanhique.khodarevent.model.Event
 import com.mariomanhique.khodarevent.model.Result
@@ -14,7 +17,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val repository: KhodarEventsRepoImpl,
+    private val repository: KhoEventsRepoImpl,
 ):ViewModel() {
 
     private var _data: MutableStateFlow<Result<List<Community>>> = MutableStateFlow(Result.Idle)

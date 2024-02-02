@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import com.mariomanhique.khodarevent.presentation.components.KhodarIcon
 import kotlinx.coroutines.delay
 
+
 @Composable
 fun SplashScreen(
     navigateToHome: () -> Unit,
@@ -27,7 +28,4 @@ fun SplashScreen(
         delay(5000L)
         navigateToHome()
     }
-
-
-
 }

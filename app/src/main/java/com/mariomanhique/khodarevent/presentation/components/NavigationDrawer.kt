@@ -70,7 +70,7 @@ fun NavigationDrawer(
                                     tonalElevation = 1.dp
                                 ) {
                                     Icon(
-                                        modifier = Modifier.padding(5.dp),
+                                          modifier = Modifier.padding(5.dp),
                                         imageVector = Icons.Rounded.Settings,
                                         contentDescription = "",
                                         tint = KhodarButtonsColors.white

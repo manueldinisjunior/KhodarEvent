@@ -1,14 +1,17 @@
-package com.mariomanhique.khodarevent.data.repository;
+package com.mariomanhique.khodarevent.data.repository
+
 
 import android.util.Log
 import com.mariomanhique.khodarevent.model.AuthenticationRequest
 import com.mariomanhique.khodarevent.model.Community
 import com.mariomanhique.khodarevent.model.Event
 import com.mariomanhique.khodarevent.model.EventRequest
+import com.mariomanhique.khodarevent.model.ResponseStatus
 import com.mariomanhique.khodarevent.network.KhodarEventsApi
+import java.net.HttpURLConnection
 import javax.inject.Inject
 
-class KhodarEventsRepoImpl @Inject constructor (private val api: KhodarEventsApi): KhodarEventsRepoInterface {
+class KhoEventsRepoImpl @Inject constructor (private val api: KhodarEventsApi): KhodarEventsRepoInterface {
     override suspend fun getCommunities(): List<Community> {
         Log.d("Communities", "getCommunities: ${api.getCommunities()}")
         return api.getCommunities()
@@ -55,16 +58,15 @@ class KhodarEventsRepoImpl @Inject constructor (private val api: KhodarEventsApi
                 request = eventRequest
             )
 
-            if (response.isSuccessful){
+            if (response.isSuccessful) {
                 response.body()?.responseCode.toString()
-            } else{
+            } else {
                 response.errorBody().toString()
             }
-        } catch (e: Exception){
+        } catch (e: Exception) {
             e.message.toString()
         }
+    }
 
 
     }
-}
-

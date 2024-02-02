@@ -4,12 +4,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+
 import com.mariomanhique.khodarevent.model.Community
-import com.mariomanhique.khodarevent.model.Event
-import com.mariomanhique.khodarevent.presentation.screens.home.HomeContent
-import com.mariomanhique.khodarevent.presentation.screens.home.HomeViewModel
-// import com.mariomanhique.khodarevent.model.Communities
 import com.mariomanhique.khodarevent.model.Result
+import com.mariomanhique.khodarevent.model.Event
 
 @Composable
 fun HomeScreen(
@@ -17,6 +15,7 @@ fun HomeScreen(
     navigateToEventDetails: () -> Unit,
     homeViewModel: HomeViewModel = hiltViewModel()
 ){
+
 
 
     val communities by homeViewModel.data.collectAsStateWithLifecycle()
@@ -45,5 +44,3 @@ fun HomeScreen(
 
 
 }
-
-

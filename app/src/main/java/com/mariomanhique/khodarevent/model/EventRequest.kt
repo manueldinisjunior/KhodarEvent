@@ -1,10 +1,11 @@
 package com.mariomanhique.khodarevent.model
 
 data class EventRequest(
-    val title: String,
     val description: String,
-    val date: String,
-    val startTime: String,
     val endTime: String,
+    val eventDate: String,
     val eventLimit: Int,
+    val id: Int,
+    val startTime: String,
+    val title: String
 )

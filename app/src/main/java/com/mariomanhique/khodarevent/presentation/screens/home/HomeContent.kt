@@ -103,7 +103,7 @@ fun HomeContent(
                     onValueChange = onSearchValueChange
                 )
 
-                IconButton(
+                IconButton( 
                     onClick = onMenuClicked
                 ) {
                     Image(

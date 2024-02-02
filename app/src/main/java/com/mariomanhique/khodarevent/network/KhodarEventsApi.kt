@@ -1,6 +1,8 @@
 package com.mariomanhique.khodarevent.network
+
 import com.mariomanhique.khodarevent.model.AuthenticationRequest
 import com.mariomanhique.khodarevent.model.Community
+
 import com.mariomanhique.khodarevent.model.Event
 import com.mariomanhique.khodarevent.model.EventRequest
 import com.mariomanhique.khodarevent.model.ResponseStatus
@@ -9,6 +11,7 @@ import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Header
+import retrofit2.http.Headers
 import retrofit2.http.POST
 import retrofit2.http.Path
 import javax.inject.Singleton
@@ -25,7 +28,7 @@ interface KhodarEventsApi {
     @GET("events/{id}")
     suspend fun getEventById(
         @Path("id") eventId: String
-    ): Event
+    ):Event
 
     @POST("auth/authenticate")
     suspend fun authenticateUser(@Body request: AuthenticationRequest): Response<TokenResponse>
@@ -42,4 +45,3 @@ interface KhodarEventsApi {
         @Path(value = "id") communityId: Int
     ):List<Event>
 }
-
