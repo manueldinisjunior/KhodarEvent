@@ -1,5 +1,8 @@
 R_DEF: Internal format may change without notice
 local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
 color black
 color purple_200
 color purple_500
@@ -7,16 +10,29 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable date
+drawable email
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable limit
+drawable lock
 drawable menu
 drawable mozdev
+drawable pencil
+drawable profile
+drawable text
+drawable time
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string communities_section
 string next_events
+string password
 string searchPlaceHolder
+string sign_In
+string sign_up
+string sign_up_text
+string username
 string your_community_button
 style Theme.KhodarEvent
 xml backup_rules
