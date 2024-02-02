@@ -140,6 +140,9 @@ dependencies {
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
 
     implementation("androidx.work:work-runtime-ktx:2.9.0")
-
     implementation("androidx.palette:palette-ktx:1.0.0")
+
+    implementation("androidx.compose.material:material-icons-extended:1.6.0")
+
 }
+

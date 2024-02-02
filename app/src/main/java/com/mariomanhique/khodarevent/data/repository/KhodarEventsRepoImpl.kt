@@ -11,7 +11,7 @@ import com.mariomanhique.khodarevent.network.KhodarEventsApi
 import java.net.HttpURLConnection
 import javax.inject.Inject
 
-class KhoEventsRepoImpl @Inject constructor (private val api: KhodarEventsApi): KhodarEventsRepoInterface {
+class KhodarEventsRepoImpl @Inject constructor (private val api: KhodarEventsApi): KhodarEventsRepoInterface {
     override suspend fun getCommunities(): List<Community> {
         Log.d("Communities", "getCommunities: ${api.getCommunities()}")
         return api.getCommunities()

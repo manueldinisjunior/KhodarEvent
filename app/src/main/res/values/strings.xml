@@ -1,7 +1,14 @@
 <resources>
+
     <string name="app_name">KhodarEvent</string>
     <string name="searchPlaceHolder">PlaceHolder</string>
     <string name="your_community_button">Community</string>
     <string name="next_events">Next Event</string>
     <string name="communities_section">Section</string>
+    <string name="username">Username</string>
+    <string name="password">Username</string>
+    <string name="sign_In">Sign In</string>
+    <string name="sign_up_text">Sign Up Text</string>
+    <string name="sign_up">Sign Up</string>
+
 </resources>
