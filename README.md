@@ -2,4 +2,4 @@
 
 An application for communities event management built with Koitlin 
 
-#
+# 24
