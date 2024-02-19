@@ -2,7 +2,7 @@
 
 An application for communities event management built with Koitlin 
 
-🛸 ### Hello Android Developers! I'm Manuel and this is my solution for the 2-week running sprint held by TurboKode called #Khodar! 😊
+🛸 Hello Android Developers! I'm Manuel and this is my solution for the 2-week running sprint held by TurboKode called #Khodar! 😊
 
 🛠️ Built with:
 
